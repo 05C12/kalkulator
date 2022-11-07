@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet"  type="text/css" href="kal.css">
+</head>
+<body>
+<h1>Каркулятор С-12</h1>
+<div >
+<input id="n1"/>
+<p><font color="white">+</font></p>
+<input id="n2"/>
+<button onclick="func()">Result</button>
+
+<p id="result_a"></p>
+
+ <script>
+    function func(){
+          var n1 = Number(document.getElementById("n1").value);
+          var n2 = Number(document.getElementById("n2").value);
+          var result_a = n1 + n2;
+
+          document.getElementById("result_a").innerHTML = result_a;
+          }
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="n3"/>
+<p><font color="white">-</font></p>
+<input id="n4">
+<button onclick="func1()">Result</button>
+<p id="result_b"></p>
+<script>
+function func1() 
+  {
+    var n3 = Number(document.getElementById("n3").value);
+    var n4 = Number(document.getElementById("n4").value);
+    var result_b = n3 - n4;
+
+document.getElementById("result_b").innerHTML = result_b;
+}
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="n5"/>
+<p><font color="white">*</font></p>
+<input id="n6">
+<button onclick="func2()">Result</button>
+<p id="result_c"></p>
+<script>
+function func2() 
+  {
+    var n5 = Number(document.getElementById("n5").value);
+    var n6 = Number(document.getElementById("n6").value);
+    var result_c = n5 * n6;
+
+document.getElementById("result_c").innerHTML = result_c;
+}
+</script>
+</div>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div>
+<input id="n7"/>
+<p><font color="white">/</font></p>
+<input id="n8">
+<button onclick="func3()">Result</button>
+<p id="result_d"></p>
+<script>
+function func3() 
+  {
+    var n7 = Number(document.getElementById("n7").value);
+    var n8 = Number(document.getElementById("n8").value);
+    var result_d = n7 / n8;
+
+document.getElementById("result_d").innerHTML = result_d;
+}
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="n9"/>
+<p><font color="white">^</font></p>
+<input id="n10">
+<button onclick="func4()">Result</button>
+<p id="result_e"></p>
+<script>
+function func4() 
+  {
+    var n9 = Number(document.getElementById("n9").value);
+    var n10 = Number(document.getElementById("n10").value);
+    var result_e = Math.pow(n9, n10);
+
+document.getElementById("result_e").innerHTML = result_e;
+}
+</script>
+</div>
+</body>
+</html>
